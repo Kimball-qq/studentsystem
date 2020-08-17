@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生管理系统</title>
+</head>
+<body>
+<div><h1>学生管理系统</h1></div>
+<table border="1" >
+    <thead>
+    <tr>
+        <th>学生编号</th>
+        <th>学生姓名</th>
+        <th>学生性别</th>
+        <th>学生年龄</th>
+        <th>学生年级</th>
+        <th>学生专业</th>
+        <th>学生学号</th>
+        <th>学生成绩</th>
+    </tr>
+    </thead>
+<tbody>
+{% for student in students %}
+            <tr>
+                <td>{{ student.id }}</td>
+                <td>{{ student.name }}</td>
+                <td>{{ student.sex }}</td>
+                <td>{{ student.age }}</td>
+                <td>{{ student.grade }}</td>
+                <td>{{ student.major }}</td>
+                <td>{{ student.stu_id }}</td>
+                <td>{{ student.score }}</td>
+            </tr>
+{% endfor %}
+</tbody>
+</table>
+
+</body>
+</html>

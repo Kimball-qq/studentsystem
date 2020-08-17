@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加学生</title>
+</head>
+<body>
+<div align="center">
+    <h3>添加学生</h3>
+    <p></p>
+    <form action="{{ url_for('stu_sys.addstu') }}" method="post">
+{#        {{form.csrf_token }}#}
+        <p>学生姓名：<input type="text" name="name"></p>
+        <p>学生性别：<input type="text" name="sex"></p>
+        <p>学生年龄：<input type="text" name="age"></p>
+        <p>学生年级：<input type="text" name="grade"></p>
+        <p>学生专业：<input type="text" name="major"></p>
+        <p>学生学号：<input type="text" name="stu_id"></p>
+        <p>学生成绩：<input type="text" name="score"></p>
+        <p><input type="submit" value="添加"></p>
+    </form>
+</div>
+</body>
+</html>
